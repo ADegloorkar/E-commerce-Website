@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commersce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Header -->
+      <header>
+        <h1>My E-Commerce Store</h1>
+        <div id="cart">Cart (<span id="cart-count">0</span>)</div>
+    </header>
+
+<!-- Category Bar -->
+<div id="category-bar">
+    <button class="category-btn" onclick="filterProducts('all')">All</button>
+    <button class="category-btn" onclick="filterProducts('shoes')">Shoes</button>
+    <button class="category-btn" onclick="filterProducts('clothes')">Clothes</button>
+    <button class="category-btn" onclick="filterProducts('books')">Books</button>
+</div>
+
+
+
+
+
+      <!-- Product Listing -->
+      <section id="products">
+        <div class="product">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b1bcbca4-e853-4df7-b329-5be3c61ee057/NIKE+DUNK+LOW+RETRO.png"
+"  width = "100 "  height= 100 ="Product 1">
+            <h2>Nike Air Jorden</h2>
+            <p>$3990.00</p>
+            <button onclick="addToCart(1, 'Product 1', 10.00)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/189d072a-ce15-4652-b1f8-17a59d935f4f/AIR+FORCE+1+%2707+LV8.png
+            "width = "100 "  height= 100  alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$15.00</p>
+            <button onclick="addToCart(2, 'Product 2', 15.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/189d072a-ce15-4652-b1f8-17a59d935f4f/AIR+FORCE+1+%2707+LV8.png
+            "width = "100 "  height= 100  alt="Product 2">
+            <h2>Product 3</h2>
+            <p>$15.00</p>
+            <button onclick="addToCart(2, 'Product 2', 15.00)">Add to Cart</button>
+        </div>
+        
+
+        <div class="product">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a737d765-e78c-4f83-ac6d-566f5ae9ec33/NIKE+SB+FORCE+58.png" width = "100 "  height= 100  alt="Product 3">
+            <h2>Product 4</h2>
+            <p>$20.00</p>
+            <button onclick="addToCart(3, 'Product 3', 20.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a737d765-e78c-4f83-ac6d-566f5ae9ec33/NIKE+SB+FORCE+58.png" width = "100 "  height= 100  alt="Product 3">
+            <h2>Product 5</h2>
+            <p>$20.00</p>
+            <button onclick="addToCart(3, 'Product 3', 20.00)">Add to Cart</button>
+        </div>
+    </section>
+      <!-- Cart -->
+      <section id="cart-details" style="display: none;">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: $<span id="total-amount">0.00</span></h3>
+        <button id="checkout">Checkout</button>
+    </section>
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
